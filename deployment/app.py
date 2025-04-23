@@ -69,9 +69,9 @@ class MainApp:
         if "max_temp" not in st.session_state:
             st.session_state.max_temp = self.features_values["MinTemp"]
         if "temp_9am" not in st.session_state:
-            st.session_state.min_temp = self.features_values["MinTemp"] - 1
+            st.session_state.temp_9am = self.features_values["MinTemp"] - 1
         if "temp_3pm" not in st.session_state:
-            st.session_state.max_temp = self.features_values["MinTemp"] - 1
+            st.session_state.temp_3pm = self.features_values["MinTemp"] - 1
 
         locations = self.features_values["Location"]
         wind_dir = self.features_values["WindDir"]
